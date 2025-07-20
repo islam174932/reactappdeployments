@@ -1,44 +1,49 @@
 // src/pages/Portfolio.jsx
 import { useState } from "react";
 
+// Import your images
+import poert1 from "../photos/poert1.png";
+import poert2 from "../photos/poert2.png";
+import poert3 from "../photos/poert3.png";
+
 function Portfolio() {
   const [selectedImage, setSelectedImage] = useState(null);
 
-  // Portfolio items data with your images
+  // Portfolio items data using imported images
   const portfolioItems = [
     {
       id: 1,
-      image: "./src/photos/poert1.png",
+      image: poert1, // Use imported image
       alt: "Portfolio Item 1",
       bgColor: "bg-danger",
     },
     {
       id: 2,
-      image: "./src/photos/poert2.png",
+      image: poert2, // Use imported image
       alt: "Portfolio Item 2",
       bgColor: "bg-info",
     },
     {
       id: 3,
-      image: "./src/photos/poert3.png",
+      image: poert3, // Use imported image
       alt: "Portfolio Item 3",
       bgColor: "bg-dark",
     },
     {
       id: 4,
-      image: "./src/photos/poert1.png",
+      image: poert1, // Use imported image
       alt: "Portfolio Item 4",
       bgColor: "bg-danger",
     },
     {
       id: 5,
-      image: "./src/photos/poert2.png",
+      image: poert2, // Use imported image
       alt: "Portfolio Item 5",
       bgColor: "bg-info",
     },
     {
       id: 6,
-      image: "./src/photos/poert3.png",
+      image: poert3, // Use imported image
       alt: "Portfolio Item 6",
       bgColor: "bg-dark",
     },
@@ -159,9 +164,7 @@ function Portfolio() {
               className="btn btn-light position-absolute top-0 end-0 m-3"
               onClick={closeModal}
               aria-label="Close modal"
-            >
-              ✕
-            </button>
+            />
           </div>
         </div>
       )}
