@@ -1,0 +1,20 @@
+/* src/App.css */
+.App {
+  min-height: 100vh;
+}
+
+/* Remove this line completely: */
+/* body { padding-top: 76px; } */
+
+/* Portfolio hover effect */
+.hover-overlay {
+  transition: opacity 0.3s ease;
+}
+
+.hover-overlay:hover {
+  opacity: 1 !important;
+}
+
+.position-relative:hover .hover-overlay {
+  opacity: 1 !important;
+}
